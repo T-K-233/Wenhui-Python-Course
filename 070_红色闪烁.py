@@ -10,11 +10,16 @@
 from turtle import *
 bgcolor("black")
 
-red_shiny_turtle = Turtle(visible=False)
+red_shiny_turtle = Turtle(visible=True)
 
-red_shiny_turtle.shape("arrow")                 # 上节课问题，修改海龟形状，可以是“arrow”, “turtle”, “circle”, “square”, “triangle”, “classic”
+red_shiny_turtle.shape("classic")                 # 上节课问题，修改海龟形状，可以是“arrow”, “turtle”, “circle”, “square”, “triangle”, “classic”
 
 red_shiny_turtle.getscreen().colormode(255)     # 设定颜色最大值为 255
+
+red_shiny_turtle.fillcolor(255, 0, 0)
+
+while(1):
+    pass
 
 red_shiny_turtle.shapesize(5, 5)                # 让海龟变大为原来的 5 倍
 red_shiny_turtle.penup()
